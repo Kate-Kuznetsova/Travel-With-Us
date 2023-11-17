@@ -257,7 +257,7 @@ h2 {
   height: 306px;
   display: flex;
   gap: 25px;
-  background-image: url(../images/icons/Line.svg);
+  background-image: url(../images/Line.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 27%;

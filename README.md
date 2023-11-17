@@ -1,1 +1,0 @@
-Верстка макету https://www.figma.com/file/U3LB45bgtgmp9HI54EnvTR/Exam-%231---Travel-With-Us
