@@ -1,3 +1,103 @@
+@media screen and (max-width: 1366px) {
+  #why-us #why-us_container,
+#book-now-first_container {
+    padding-left: 5vw;
+  }
+  #book-now-sec_container {
+    padding-right: 5vw;
+  }
+  #nav-logo {
+    padding-left: 5vw;
+  }
+  #nav {
+    padding-right: 5vw;
+  }
+  .container {
+    height: auto;
+  }
+  main #reviews {
+    height: auto;
+  }
+  #reviews_container {
+    padding: 5%;
+  }
+  #reviews_container #review-card {
+    flex-direction: column;
+    align-items: center;
+    max-width: 720px;
+    min-height: 280px;
+    height: 100%;
+  }
+  #review-card #review-img {
+    background-image: url(../images/ReviewPhoto1.png);
+    width: 720px;
+    height: 336px;
+  }
+  #review-card #review-card_content {
+    max-width: 720px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1320px) {
+  #steps #steps_container {
+    background-image: none !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  main #steps {
+    height: auto;
+  }
+  #steps #steps_container {
+    flex-direction: column;
+    height: auto;
+  }
+  main #steps .steps-item {
+    padding: 60px 0 60px 0;
+  }
+  main #book-now-first_container {
+    justify-content: center;
+    padding: 0;
+  }
+  main #book-now-sec_container {
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #navigation {
+    height: auto;
+  }
+  #navigation-container {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  #why-us #why-us_container {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding-left: 0;
+  }
+  #why-us #why-us_content {
+    align-items: center;
+  }
+  #why-us #why-images {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 24px;
+  }
+  #why-us #why-image_1 {
+    padding-right: 0;
+  }
+  #why-us #why-image_2 {
+    padding-left: 0;
+  }
+  main #book-now-first_container,
+main #book-now-sec_container {
+    width: 720px;
+  }
+}
 body {
   display: flex;
   max-width: 1920px;
@@ -171,41 +271,47 @@ main {
   background-image: url(../images/WhyBackground.png);
   max-width: 1920px;
   min-width: 100%;
-  height: 704px;
+  min-height: 704px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#why-us #why-us_container {
+#why-us #why-us_content-about {
+  max-width: 648px;
+}
+
+#why-us_container {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   gap: 136px;
+  padding: 0;
 }
-#why-us #why-us_content {
+
+#why-us_content {
   max-width: 648px;
   width: 100%;
-  height: 324px;
+  min-height: 324px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-#why-us #why-us_content-about {
-  width: 648px;
-}
-#why-us #why-images {
+
+#why-images {
   width: 424px;
   height: 456px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-#why-us #why-images #why-image_1 {
+
+#why-image_1 {
   padding-right: 74px;
 }
-#why-us #why-images #why-image_2 {
+
+#why-image_2 {
   padding-left: 74px;
 }
 
@@ -253,16 +359,6 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-#steps #steps_container {
-  height: 306px;
-  display: flex;
-  gap: 25px;
-  background-image: url(../images/Line.svg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 27%;
-  z-index: inherit;
-}
 #steps .steps-item {
   display: flex;
   width: 424px;
@@ -281,6 +377,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#steps_container {
+  height: 306px;
+  display: flex;
+  gap: 25px;
+  background-image: url(../images/Line.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 27%;
+  z-index: inherit;
 }
 
 #reviews, #book-now_sec, #book-now_first {
@@ -304,15 +411,21 @@ h2 {
 #book-now-first_container {
   justify-content: flex-start;
   width: 648px;
-  height: 344px;
-  padding: 220px 672px 120px 0px;
+  min-height: 344px;
+  height: 100%;
+  padding-top: 220px;
+  padding-right: 672px;
+  padding-bottom: 120px;
 }
 
 #book-now-sec_container {
   justify-content: flex-end;
   width: 648px;
-  height: 344px;
-  padding: 220px 0px 120px 672px;
+  min-height: 344px;
+  height: 100%;
+  padding-top: 220px;
+  padding-bottom: 120px;
+  padding-left: 672px;
 }
 
 .card {
@@ -375,9 +488,17 @@ h3 {
   justify-content: center;
 }
 
+#review-img {
+  display: block;
+  background-image: url(../images/ReviewPhoto.png);
+  width: 440px;
+  height: 280px;
+}
+
 #review-card_content {
   padding: 48px 65px 48px 60px;
   background: var(--Dark-Grey, #333);
+  width: 885px;
 }
 #review-card_content .explain {
   padding-top: 16px;
@@ -387,7 +508,8 @@ h3 {
 }
 
 footer {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   height: 268px;
   background: var(--Black, #000);
   display: flex;

@@ -1,0 +1,132 @@
+@media screen and (max-width: 1366px) {
+
+    #why-us #why-us_container,
+    #book-now-first_container {
+        padding-left: 5vw;
+    }
+
+    #book-now-sec_container {
+        padding-right: 5vw;
+    }
+
+    #nav-logo {
+        padding-left: 5vw;
+    }
+
+    #nav {
+        padding-right: 5vw;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    main #reviews {
+        height: auto;
+    }
+
+    #reviews_container {
+        // padding-left: 5vw;
+        // padding-right: 5vw;
+        padding: 5%;
+    }
+
+    #reviews_container #review-card {
+        flex-direction: column;
+        align-items: center;
+        max-width: 720px;
+        min-height: 280px;
+        height: 100%;
+    }
+
+    #review-card #review-img {
+        background-image: url(../images/ReviewPhoto1.png);
+        width: 720px;
+        height: 336px;
+    }
+
+    #review-card #review-card_content {
+        max-width: 720px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    #steps #steps_container {
+        background-image: none !important;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    main #steps {
+        height: auto;
+    }
+
+    #steps #steps_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main #steps .steps-item {
+        padding: 60px 0 60px 0;
+    }
+
+    main #book-now-first_container {
+        justify-content: center;
+        padding: 0;
+    }
+
+    main #book-now-sec_container {
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main #navigation {
+        height: auto;
+    }
+
+    #navigation-container {
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    #why-us #why-us_container {
+        flex-direction: column-reverse;
+        gap: 32px;
+        padding-left: 0;
+    }
+
+    #why-us #why-us_content {
+        align-items: center;
+    }
+
+
+    #why-us #why-images {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        gap: 24px;
+    }
+
+    #why-us #why-image_1 {
+        padding-right: 0;
+    }
+
+    #why-us #why-image_2 {
+        padding-left: 0;
+    }
+
+    main #book-now-first_container,
+    main #book-now-sec_container {
+        width: 720px;
+    }
+}
+
+// @media screen and (max-width: 720px) {
+
+// }
