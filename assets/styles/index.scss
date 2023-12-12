@@ -65,7 +65,7 @@ form {
   letter-spacing: 2.8px;
   border: none;
   width: 100%;
-  padding: 20px 0 20px 36px;
+  padding: 20px 0 20px 2vw;
 }
 
 #subscribe {
@@ -91,6 +91,10 @@ form {
   background: var(--Accent, #5373fd);
 }
 
+a{
+  text-decoration: none;
+}
+
 #scroll {
   color: var(--White, #fff);
   text-align: center;
@@ -105,6 +109,7 @@ form {
   align-items: center;
   gap: 4px;
   padding-bottom: 120px;
+  transition: transform 2s;
 }
 
 main {
@@ -171,6 +176,41 @@ main {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+#burger-toggle {
+  height: 13px;
+  width: 13px;
+}
+
+#nav-box_btn {
+  width: 60px;
+  height: 35px;
+  background: none;
+  border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+}
+
+.nav-box_label {
+  display: block;
+  width: 110%;
+  height: 110%;
+  transform: translate(2px, -105%);
+}
+
+#hamburger {
+  width: 60px;
+  height: 35px;
+}
+
+// #hamburger-close{
+//   visibility: hidden;
+// width: 60px;
+//     height: 35px;
+// }
+
 
 #why-us {
   background-image: url(../images/WhyBackground.png);

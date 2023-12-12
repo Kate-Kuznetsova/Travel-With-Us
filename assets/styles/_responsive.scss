@@ -127,6 +127,151 @@
     }
 }
 
-// @media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
 
-// }
+    #review-card #review-img {
+        background-image: url(../images/ReviewPhoto2.png);
+        width: 540px;
+        height: 336px;
+    }
+
+    #header-search {
+        width: calc(100%*0.95);
+    }
+
+    #navigation-container {
+        flex-direction: row;
+        width: 90vw;
+        align-items: baseline;
+
+    }
+
+    #nav-logo {
+        padding: 0;
+    }
+
+    #nav-box {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: end;
+    }
+
+    #nav-box #nav-box_btn {
+        display: unset;
+    }
+
+    #nav-box #nav {
+        display: none;
+        padding: 0;
+    }
+
+    #burger-toggle:checked~#nav {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 24px;
+        height: 216px;
+    }
+
+    .nav-item .nav-link {
+        background: var(--Accent, #5373FD);
+        color: var(--White, #FFF);
+        font-family: Aleo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+    }
+
+    #why-us #why-us_container {
+        padding: 20px 0;
+    }
+
+    #why-us #why-us_content {
+        width: 80vw;
+        gap: 20px;
+    }
+
+    #why-us #why-images {
+        flex-direction: column;
+    }
+
+    #reviews_container {
+        padding: 5vh 0;
+    }
+
+    #reviews_container #review-card,
+    #review-card #review-card_content {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        height: 500px;
+    }
+
+    header h1 {
+        padding: 0;
+    }
+
+    header #scroll {
+        padding: 20vh 0 0 0;
+    }
+
+    #search {
+        letter-spacing: 1px;
+    }
+
+    #nav-logo {
+        font-size: 20px;
+    }
+
+    #navigation #navigation-container {
+        gap: 0;
+    }
+
+    main #steps .steps-item {
+        padding: 6vh 0 6vh 0;
+    }
+
+    #why-us #why-us_content-about {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    main #book-now_first,
+    main #book-now_sec {
+        height: auto;
+    }
+
+    #review-card #review-img {
+        background-image: url(../images/ReviewPhoto3.png);
+        width: 320px;
+        height: 336px;
+    }
+
+    #reviews #reviews_container {
+        gap: 20px;
+        padding: 0;
+    }
+
+    #reviews_container #review-card {
+        max-width: 320px;
+    }
+
+    #review-card #review-card_content {
+        max-width: 320px;
+        padding: 2vh 2vw 2vh 2vw;
+    }
+
+    #review-card_content .explain,
+    .card-content .explain {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
